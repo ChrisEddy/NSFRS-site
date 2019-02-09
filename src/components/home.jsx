@@ -1,14 +1,40 @@
 import React, { Component } from 'react';
 import '../stylesheets/home.css';
+import * as firebase from 'firebase';
 
 import Navbar from './navbar.jsx';
 import Footer from './footer.jsx';
 
-import memberOfMonth from '../assets/me.jpg';
 import teamImg from '../assets/team.jpg';
 import logo from '../assets/logo.png';
 
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+        mvpPicture: ''
+    };
+  }
+
+  componentDidMount(){
+    const config = {
+        apiKey: "AIzaSyAp6tscsqBecmVV1R1i5mTmSCe4BBueoaU",
+        authDomain: "nsfrs-98ae2.firebaseapp.com",
+        databaseURL: "https://nsfrs-98ae2.firebaseio.com",
+        projectId: "nsfrs-98ae2",
+        storageBucket: "nsfrs-98ae2.appspot.com",
+        messagingSenderId: "281881814471"
+    };
+    firebase.initializeApp(config);
+
+    const storage = firebase.storage();
+    const mvpPictureRef = storage.ref('mvpPicture');
+    mvpPictureRef.getDownloadURL().then(function(url) {
+      const urlAyy = url;
+    })
+  }
+
   render() {
     return (
       <div className="Home">
@@ -66,7 +92,7 @@ class Home extends Component {
               <div className="col-4 text-center">
                 <h3>Member of the Month</h3>
                 <br/>
-                <img src={memberOfMonth} className="memberMonth" alt="memberOfMonth"/>
+                <img src={this.state.mvpPicture} className="memberMonth" alt="memberOfMonth"/>
                 <p>Chris Eddy</p>
               </div>
               <div className="col-4 text-center">
