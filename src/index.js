@@ -9,6 +9,7 @@ import About from './components/about.jsx';
 import Calendar from './components/calendar.jsx';
 import Gallery from './components/gallery.jsx';
 import Donations from './components/donations.jsx';
+import Admin from './components/admin.jsx';
 
 const routing = (
     <Router>
@@ -18,6 +19,7 @@ const routing = (
         <Route exact path="/calendar" component={Calendar}/>
         <Route exact path="/gallery" component={Gallery}/>
         <Route exact path="/donations" component={Donations}/>
+        <Route exact path="/admin" component={Admin}/>
       </div>
     </Router>
   )
