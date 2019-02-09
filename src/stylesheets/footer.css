@@ -3,7 +3,19 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #184981;
+    background-color:#233877;
     color: white;
     padding-top: 13px;
+}
+
+.Footer a{
+    color: white;
+}
+
+.Footer i{
+    cursor: pointer;
+}
+
+.Footer i:hover{
+    color: rgb(231, 231, 231);
 }

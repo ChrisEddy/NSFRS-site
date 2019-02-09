@@ -4,6 +4,42 @@
     width: auto;
 }
 
+.Home #secondRow{
+    background-color: rgb(247, 247, 247);
+}
+
+.Home .jumbotron{
+    background-image: url('../assets/shuswap.jpg');
+    min-height: 50vh;
+    padding-top: 30px;
+}
+
+.Home #headerBackground{
+    background-color: #233877;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Home .jumbotron .display-4, .Home .jumbotron .lead{
+    color: white;
+}
+
+.Home .jumbotron .display-4{
+    font-size: 3.0rem;
+}
+
+.Home #headerLogo{
+    border-radius: 150px;
+    height: 200px;
+    width: auto;
+}
+
 .Home #teamPhoto{
     border-radius: 10px;
+    height: 190px;
 }
