@@ -13,26 +13,32 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        mvpPicture: ''
+        mvpPicture: '',
+        mvpName: '',
+        mvpDescription: ''
     };
   }
 
   componentDidMount(){
-    const config = {
-        apiKey: "AIzaSyAp6tscsqBecmVV1R1i5mTmSCe4BBueoaU",
-        authDomain: "nsfrs-98ae2.firebaseapp.com",
-        databaseURL: "https://nsfrs-98ae2.firebaseio.com",
-        projectId: "nsfrs-98ae2",
-        storageBucket: "nsfrs-98ae2.appspot.com",
-        messagingSenderId: "281881814471"
-    };
-    firebase.initializeApp(config);
-
     const storage = firebase.storage();
     const mvpPictureRef = storage.ref('mvpPicture');
     mvpPictureRef.getDownloadURL().then(function(url) {
-      const urlAyy = url;
+      document.getElementById('mvpPicture').src = url;
     })
+
+    const db = firebase.firestore();
+    var docRef = db.collection("data").doc("3dxcxftejADMxR9xFLJq");
+
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
+            document.getElementById('mvpName').innerText = doc.data().mvpName;
+            document.getElementById('mvpDescription').innerText = doc.data().mvpDescription;
+        } else {
+            console.log("No such document!");
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
   }
 
   render() {
@@ -92,8 +98,9 @@ class Home extends Component {
               <div className="col-4 text-center">
                 <h3>Member of the Month</h3>
                 <br/>
-                <img src={this.state.mvpPicture} className="memberMonth" alt="memberOfMonth"/>
-                <p>Chris Eddy</p>
+                <img src='' className="memberMonth" alt="memberOfMonth" id="mvpPicture"/>
+                <p id="mvpName"></p>
+                <p id="mvpDescription"></p>
               </div>
               <div className="col-4 text-center">
 

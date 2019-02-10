@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+import * as firebase from 'firebase';
 import './stylesheets/global.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,6 +11,16 @@ import Calendar from './components/calendar.jsx';
 import Gallery from './components/gallery.jsx';
 import Donations from './components/donations.jsx';
 import Admin from './components/admin.jsx';
+
+var config = {
+  apiKey: "AIzaSyAp6tscsqBecmVV1R1i5mTmSCe4BBueoaU",
+  authDomain: "nsfrs-98ae2.firebaseapp.com",
+  databaseURL: "https://nsfrs-98ae2.firebaseio.com",
+  projectId: "nsfrs-98ae2",
+  storageBucket: "nsfrs-98ae2.appspot.com",
+  messagingSenderId: "281881814471"
+};
+firebase.initializeApp(config);
 
 const routing = (
     <Router>

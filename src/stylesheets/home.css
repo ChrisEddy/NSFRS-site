@@ -1,7 +1,8 @@
 .Home .memberMonth{
     border-radius: 500px;
     height: 200px;
-    width: auto;
+    width: 200px;
+    object-fit: cover;
 }
 
 .Home #secondRow{
