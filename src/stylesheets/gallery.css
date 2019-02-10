@@ -1,0 +1,19 @@
+.Gallery .row img{
+    cursor: pointer;
+    border-radius: 20px;
+    max-height: 250px;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.Gallery .modal img{
+    cursor: pointer;
+    border-radius: 20px;
+    max-height: auto;
+    max-width: 80vw !important;
+}
+
+.Gallery .modal-dialog{
+    max-width: 90vw !important;
+}
