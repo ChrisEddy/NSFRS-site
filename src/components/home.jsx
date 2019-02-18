@@ -8,6 +8,10 @@ import Footer from './footer.jsx';
 import teamImg from '../assets/team.jpg';
 import logo from '../assets/logo.png';
 
+import {Pie} from 'react-chartjs-2';
+import {Doughnut} from 'react-chartjs-2';
+import {Bar} from 'react-chartjs-2';
+
 class Home extends Component {
 
   constructor(props) {
@@ -42,6 +46,19 @@ class Home extends Component {
   }
 
   render() {
+
+    const pieData = {
+      datasets: [{
+          data: [10, 20, 40],
+          backgroundColor: ['red', 'green', 'yellow'],
+      }],
+      labels: [
+          'Red',
+          'Green',
+          'Yellow'
+      ]
+    };
+
     return (
       <div className="Home">
         <Navbar/>
@@ -59,51 +76,82 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="row" id="firstRow">
+            <div className="row pb-5 pt-5" id="firstRow">
               <div className="col-12">
-                <h2>Our Mission Statement</h2>
                 <div className="row">
-                  <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  <br/>
-                    <ul>
-                      <li><h4>Power</h4></li>
-                      <li><h4>Kindness</h4></li>
-                      <li><h4>Hello</h4></li>
-                      <li><h4>Courage</h4></li>
-                      <li><h4>Get that shit</h4></li>
-                      <li><h4>Get that shit</h4></li>
-                    </ul>
+                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Our Story</h2>
+                    <p className="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                   </div>
-                  <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h2>Our Values</h2>
                     <div className="row">
-                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <h4>Our Story</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                      <div className="col-6 pt-2">
+                        <ul>
+                          <li><p className="lead">Passion</p></li>
+                          <li><p className="lead">Teamwork</p></li>
+                          <li><p className="lead">Determination</p></li>
+                        </ul>
                       </div>
-                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <h4>Our Team</h4>
-                        <div className="text-center">
-                          <img src={teamImg} alt="teamPhoto" id="teamPhoto" className="img-fluid"/>
-                        </div>
+                      <div className="col-6">
+                        <ul>
+                          <li><p className="lead">Passion</p></li>
+                          <li><p className="lead">Teamwork</p></li>
+                          <li><p className="lead">Determination</p></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="row pt-5" id="secondRow">
-              <div className="col-4 text-center">
-
+            <div className="row pt-5 pb-5" id="secondRow">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <h2>Our Team</h2>
+                <br/>
+                <img src={teamImg} alt="teamPhoto" id="teamPhoto" className="img-fluid shadow"/>
               </div>
-              <div className="col-4 text-center">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
                 <h3>Member of the Month</h3>
                 <br/>
-                <img src='' className="memberMonth" alt="memberOfMonth" id="mvpPicture"/>
-                <p id="mvpName"></p>
+                <img src='' className="memberMonth shadow" alt="memberOfMonth" id="mvpPicture"/>
+                <p className="lead" id="mvpName"></p>
                 <p id="mvpDescription"></p>
               </div>
-              <div className="col-4 text-center">
-
+            </div>
+            <div className="row pt-4 pb-4">
+              <div className="col-12 pb-4">
+                <h2>Our Statistics</h2>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
+                <Pie
+                  data={pieData}
+                  width={300}
+                  height={300}
+                  options={{
+                    maintainAspectRatio: false
+                  }}
+                />
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
+                <Doughnut
+                  data={pieData}
+                  width={300}
+                  height={300}
+                  options={{
+                    maintainAspectRatio: false
+                  }}
+                />
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
+                <Bar
+                  data={pieData}
+                  width={300}
+                  height={300}
+                  options={{
+                    maintainAspectRatio: false
+                  }}
+                />
               </div>
             </div>
           </div>

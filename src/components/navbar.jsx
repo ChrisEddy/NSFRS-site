@@ -8,6 +8,30 @@ class Navbar extends Component {
     this.changeActive = this.changeActive.bind(this);
   }
 
+  componentDidMount(){
+    const url = window.location;
+    console.log(url.pathname);
+    switch(url.pathname){
+      case '/':
+      document.getElementById('homeLink').style.color = '#fff900';
+      break;
+      case '/about':
+      document.getElementById('aboutLink').style.color = '#fff900';
+      break;
+      case '/calendar':
+      document.getElementById('calendarLink').style.color = '#fff900';
+      break;
+      case '/gallery':
+      document.getElementById('galleryLink').style.color = '#fff900';
+      break;
+      case '/donations':
+      document.getElementById('donationsLink').style.color = '#fff900';
+      break;
+      default:
+      break;
+    }
+  }
+
   changeActive(id){
     document.getElementById(id).style.fontSize = 'black !important';
   }
@@ -15,7 +39,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="Navbar">
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg navbar-dark">
           <a className="navbar-brand" href="/">N.S.F.R.S</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

@@ -3,3 +3,13 @@
     height: 250px;
     width: auto;
 }
+
+.About .aboutPersonMini{
+    border-radius: 1000px;
+    height: 150px;
+    width: auto;
+}
+
+.About .lead{
+    font-weight: 400;
+}

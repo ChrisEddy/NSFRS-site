@@ -9,6 +9,10 @@
     background-color: rgb(247, 247, 247);
 }
 
+.Home .lead{
+    font-weight: 400;
+}
+
 .Home .jumbotron{
     background-image: url('../assets/shuswap.jpg');
     min-height: 50vh;
@@ -42,5 +46,17 @@
 
 .Home #teamPhoto{
     border-radius: 10px;
-    height: 190px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .Home #headerBackground{
+        border-radius: 60px;
+    }
+    .Home #headerBackground h1{
+        font-size: 30px;
+    }
+    .Home #headerBackground .lead{
+        font-size: 18px;
+    }
 }
