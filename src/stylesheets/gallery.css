@@ -10,7 +10,7 @@
 .Gallery .modal img{
     cursor: pointer;
     border-radius: 20px;
-    max-height: auto;
+    max-height: 75vh;
     max-width: 80vw !important;
 }
 

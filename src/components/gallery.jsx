@@ -10,6 +10,15 @@ import practice from '../assets/practice.jpg';
 import practice2 from '../assets/practice2.jpg';
 import practice3 from '../assets/practice3.jpg';
 
+import newpic1 from '../assets/newpic1.jpg';
+import newpic2 from '../assets/newpic2.jpg';
+import newpic3 from '../assets/newpic3.jpg';
+import newpic4 from '../assets/newpic4.jpg';
+import newpic5 from '../assets/newpic5.jpg';
+import newpic6 from '../assets/newpic6.jpg';
+import newpic7 from '../assets/newpic7.jpg';
+import newpic8 from '../assets/newpic8.jpg';
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -48,16 +57,16 @@ class Gallery extends Component {
 
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img5" onClick={() => this.openModal("img5")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img5" onClick={() => this.openModal("img5")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic1} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img6" onClick={() => this.openModal("img6")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img6" onClick={() => this.openModal("img6")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic2} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img7" onClick={() => this.openModal("img7")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img7" onClick={() => this.openModal("img7")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic3} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img8" onClick={() => this.openModal("img8")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img8" onClick={() => this.openModal("img8")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic4} alt="img"></img>
           </div>
         </div>
 
@@ -65,16 +74,16 @@ class Gallery extends Component {
 
         <div className="row">
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img9" onClick={() => this.openModal("img9")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img9" onClick={() => this.openModal("img9")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic5} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img10" onClick={() => this.openModal("img10")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img10" onClick={() => this.openModal("img10")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic6} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img11" onClick={() => this.openModal("img11")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img11" onClick={() => this.openModal("img11")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic7} alt="img"></img>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img id="img12" onClick={() => this.openModal("img12")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src="https://via.placeholder.com/300" alt="img"></img>
+            <img id="img12" onClick={() => this.openModal("img12")} data-toggle="modal" data-target="#exampleModal" className="img-fluid shadow hvr-grow" src={newpic8} alt="img"></img>
           </div>
         </div>
 

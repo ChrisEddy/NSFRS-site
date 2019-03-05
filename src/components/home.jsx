@@ -116,7 +116,7 @@ class Home extends Component {
                 <br/>
                 <img src='' className="memberMonth shadow" alt="memberOfMonth" id="mvpPicture"/>
                 <p className="lead" id="mvpName"></p>
-                <p id="mvpDescription"></p>
+                <p className="text-left" id="mvpDescription"></p>
               </div>
             </div>
             <div className="row pt-4 pb-4">
