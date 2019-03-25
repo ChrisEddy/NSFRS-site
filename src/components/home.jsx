@@ -47,15 +47,41 @@ class Home extends Component {
 
   render() {
 
-    const pieData = {
+    const incomeData = {
       datasets: [{
-          data: [10, 20, 40],
-          backgroundColor: ['red', 'green', 'yellow'],
+          data: [27000, 4500, 2000, 100, 600, 1070],
+          backgroundColor: ['#FFCAB1', '#69A2B0', '#659157', '#A1C084', '#E05263', '#D3C1D2'],
       }],
       labels: [
-          'Red',
-          'Green',
-          'Yellow'
+          'CSRD Grant',
+          'Donations',
+          'Signs',
+          'Dues',
+          'Rebate GST',
+          'Balance from 2018'
+      ]
+    };
+
+    const expenseData = {
+      datasets: [{
+          data: [2500, 1000, 3580, 6500, 5100, 5000, 900, 300, 5000, 1000, 550, 2000, 1800, 40],
+          backgroundColor: ['#FFCAB1', '#69A2B0', '#659157', '#A1C084', '#E05263', '#D3C1D2', '#222E50', '#007991', '#439A86', '#BCD8C1', '#E9D985', '#70161E', '#596F62', '#1C3144'],
+      }],
+      labels: [
+          'Jump Kits',
+          'Oxygen',
+          'AED',
+          'Radios/Pagers',
+          'Interconnect/Repeater',
+          'Insurance',
+          'Radio/Pager License',
+          'Bi-Weekly Training',
+          'Certification Training',
+          'Promotions',
+          'Operational Expenses',
+          'Training Payout',
+          'Reflective Signs',
+          'Service Charge'
       ]
     };
 
@@ -123,35 +149,35 @@ class Home extends Component {
               <div className="col-12 pb-4">
                 <h2>Our Statistics</h2>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
-                <Pie
-                  data={pieData}
-                  width={300}
-                  height={300}
-                  options={{
-                    maintainAspectRatio: false
-                  }}
-                />
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3 pb-3 text-center">
+              <h3>Our Income</h3>
+              <br/>
+                <div>
+                  <Pie
+                    data={incomeData}
+                    width={300}
+                    height={400}
+                    options={{
+                      maintainAspectRatio: false
+                    }}
+                  />
+                </div>
+              <h5>Total Income: $35270.00</h5>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
-                <Doughnut
-                  data={pieData}
-                  width={300}
-                  height={300}
-                  options={{
-                    maintainAspectRatio: false
-                  }}
-                />
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-3 pb-3">
-                <Bar
-                  data={pieData}
-                  width={300}
-                  height={300}
-                  options={{
-                    maintainAspectRatio: false
-                  }}
-                />
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3 pb-3 text-center">
+              <h3>Our Expenses</h3>
+              <br/>
+                <div>
+                  <Pie
+                    data={expenseData}
+                    width={300}
+                    height={400}
+                    options={{
+                      maintainAspectRatio: false
+                    }}
+                  />
+                </div>
+              <h5>Total Expenses: $35270.00</h5>
               </div>
             </div>
           </div>
