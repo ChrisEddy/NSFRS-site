@@ -132,12 +132,12 @@ class Home extends Component {
               </div>
             </div>
             <div className="row pt-5 pb-5" id="secondRow">
-              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center mt-4">
                 <h2>Our Team</h2>
                 <br/>
                 <img src={teamImg} alt="teamPhoto" id="teamPhoto" className="img-fluid shadow"/>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center mt-4">
                 <h3>Member of the Month</h3>
                 <br/>
                 <img src='' className="memberMonth shadow" alt="memberOfMonth" id="mvpPicture"/>
