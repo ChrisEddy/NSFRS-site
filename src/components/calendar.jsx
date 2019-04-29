@@ -3,8 +3,6 @@ import '../stylesheets/calendar.css';
 import '../../node_modules/react-big-calendar/lib/css/react-big-calendar.css'
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
-import * as firebase from 'firebase';
-
 import events from '../events.js';
 
 import Navbar from './navbar.jsx';
@@ -13,14 +11,12 @@ import Footer from './footer.jsx';
 const localizer = BigCalendar.momentLocalizer(moment) 
 
 class Calendar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
         events: []
     };
 }
-
   render() {
     return (
       <div className="Calendar">

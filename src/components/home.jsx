@@ -9,8 +9,6 @@ import teamImg from '../assets/team.jpg';
 import logo from '../assets/logo.png';
 
 import {Pie} from 'react-chartjs-2';
-import {Doughnut} from 'react-chartjs-2';
-import {Bar} from 'react-chartjs-2';
 
 class Home extends Component {
 
@@ -107,7 +105,7 @@ class Home extends Component {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h2>Our Story</h2>
-                    <p className="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p className="lead">The North Shuswap First Responders has been a volunteer organization since 1995. Bringing together volunteers, for 23 years with the goal of serving our community with compassion, pride, and love. We are an organization dedicated to helping our neighbors, friends, and loved ones in their time of need. Do you have what it takes to be hands on in your community? Join us and see for yourself if being a First Responder is right for you!</p>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h2>Our Values</h2>

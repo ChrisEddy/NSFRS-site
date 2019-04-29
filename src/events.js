@@ -236,5 +236,12 @@ export default [
       allDay: true,
       start: '2020, 1, 16',
       end: '2020, 1, 16'
+    },
+    {
+      id: 34,
+      title: 'Roadside Cleanup - Charlotte Hall at 250-517-8329',
+      allDay: true,
+      start: '2019, 5, 4',
+      end: '2019, 5, 6'
     }
   ]
