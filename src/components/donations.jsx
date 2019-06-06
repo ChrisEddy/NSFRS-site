@@ -19,7 +19,7 @@ class Donations extends Component {
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-5">
-              <h5>If you would like to support the North Shuswap First Responders Society, you can make donations to our email address.</h5>
+              <h4>If you would like to support the North Shuswap First Responders Society, you can make donations to our email address.</h4>
               <br/>
               <p>Donations go towards equipment used on calls, such as medical supplies, oxygen tanks, and radios. Donations also help with training costs, each certified First Responder goes through standard red cross training, and we have three trainers on our team that keep us up to date and refreshed with our learning. </p>
               <br/>
@@ -37,7 +37,25 @@ class Donations extends Component {
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-5">
               <h4>Are you looking for to purchase reflective house numbers and signs?</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <br/>
+              <p>We who are fortuante enough to live or at least spend time in the North Shuswap know that a few inconviences are worth the joy our lifestyle provides.</p>
+              <p>
+                Quick response to an emergency of any kind is essential to a good outcome. In a medical emergency of any kind is essential to a good outcome.
+              </p>
+              <p>
+                In a medical emergency the North Shuswap First Resonders will typically be the first on the scene. To help get the Response team to your location, it is necessary to be able to find you or your guests.
+              </p>
+              <ol>
+                <li>Have the address visible in a prominent location within your dwelling (People get flustered and can forget the basics).</li>
+                <li>Have the address clearly marked at the street entrance to your property.</li>
+                <li>If possible, assign a person to direct the team to the location of your emergency.</li>
+              </ol>
+              <p>
+                You can order Green and White reflective address signs made for your location from the North Shuswap First Responders by visiting us at a number of summer events or by contacting Margaret Needham at <a href="tel:250-679-2334">250-679-2334</a> or <a href = "mailto: ma.needham49@gmail.com">ma.needham49@gmail.com </a>
+              </p>
+              <p>
+                The cost is $30.00 per sign.
+              </p>
             </div>
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>

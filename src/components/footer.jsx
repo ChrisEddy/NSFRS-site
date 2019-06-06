@@ -7,8 +7,9 @@ class Footer extends Component {
       <div className="Footer">
         <div className="row">
           <div className="col-3 text-center">
-            <i className="fab fa-facebook fa-2x"></i>
-            <i className="fab fa-twitter-square fa-2x ml-3"></i>
+            <a href="https://www.facebook.com/North-Shuswap-First-Responders-232930087385283/">
+              <i className="fab fa-facebook fa-2x mb-2"></i>
+            </a>
           </div>
           <div className="col-6 text-center">
             <small>North Shuswap First Responder Society &copy; 2019</small>

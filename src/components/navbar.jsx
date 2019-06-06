@@ -27,6 +27,9 @@ class Navbar extends Component {
       case '/donations':
       document.getElementById('donationsLink').style.color = '#fff900';
       break;
+      case '/clinic':
+      document.getElementById('clinicLink').style.color = '#fff900';
+      break;
       default:
       break;
     }
@@ -51,6 +54,7 @@ class Navbar extends Component {
               <Link to="/calendar" className="nav-item nav-link" onClick={() => this.changeActive('calendarLink')}><span id="calendarLink">Calendar</span></Link>
               <Link to="/gallery" className="nav-item nav-link" onClick={() => this.changeActive('galleryLink')}><span id="galleryLink">Gallery</span></Link>
               <Link to="/donations" className="nav-item nav-link" onClick={() => this.changeActive('donationsLink')}><span id="donationsLink">Donations</span></Link>
+              <Link to="/clinic" className="nav-item nav-link" onClick={() => this.changeActive('clinicLink')}><span id="clinicLink">Clinic</span></Link>
             </div>
           </div>
         </nav>

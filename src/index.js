@@ -11,6 +11,7 @@ import Calendar from './components/calendar.jsx';
 import Gallery from './components/gallery.jsx';
 import Donations from './components/donations.jsx';
 import Admin from './components/admin.jsx';
+import Clinic from './components/clinic.jsx';
 
 var config = {
   apiKey: "AIzaSyAp6tscsqBecmVV1R1i5mTmSCe4BBueoaU",
@@ -31,6 +32,7 @@ const routing = (
         <Route exact path="/gallery" component={Gallery}/>
         <Route exact path="/donations" component={Donations}/>
         <Route exact path="/admin" component={Admin}/>
+        <Route exact path="/clinic" component={Clinic}/>
       </div>
     </Router>
   )

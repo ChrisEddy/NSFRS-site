@@ -33,8 +33,8 @@ class Home extends Component {
 
     docRef.get().then(function(doc) {
         if (doc.exists) {
-            document.getElementById('mvpName').innerText = doc.data().mvpName;
-            document.getElementById('mvpDescription').innerText = doc.data().mvpDescription;
+            // document.getElementById('mvpName').innerText = doc.data().mvpName;
+            // document.getElementById('mvpDescription').innerText = doc.data().mvpDescription;
         } else {
             console.log("No such document!");
         }
@@ -105,25 +105,34 @@ class Home extends Component {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h2>Our Story</h2>
-                    <p className="lead">The North Shuswap First Responders has been a volunteer organization since 1995. Bringing together volunteers, for 23 years with the goal of serving our community with compassion, pride, and love. We are an organization dedicated to helping our neighbors, friends, and loved ones in their time of need. Do you have what it takes to be hands on in your community? Join us and see for yourself if being a First Responder is right for you!</p>
+                    <div className="p-2">
+                      <p>
+                        The North Shuswap First Responders has been a volunteer organization since 1995. Bringing together volunteers, for 23 years with the goal of serving our community with compassion, pride, and love. We are an organization dedicated to helping our neighbors, friends, and loved ones in their time of need. With around the clock dispatchers, always listening for a call, and a group of our First Responders always on hand, we are prepared to attend any medical scenario on the North Shuswap.
+                      </p>
+                      <p>
+                        All of our certified First Responders have standard EMR training, and meet twice monthly to continue to learn, practice, and prepare for how we can best help you in a crisis. If you would like to be a part of this first hand medical training, join us at a practice, the first and third Thursday of every month, at the Celista fire hall, at 7 pm. We look forward to continue to grow and work within our community. 
+                      </p> 
+                      <p>
+                        Thank You,
+                        The NSFR
+                      </p>
+                    </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h2>Our Values</h2>
-                    <div className="row">
-                      <div className="col-6 pt-2">
-                        <ul>
-                          <li><p className="lead">Passion</p></li>
-                          <li><p className="lead">Teamwork</p></li>
-                          <li><p className="lead">Determination</p></li>
-                        </ul>
-                      </div>
-                      <div className="col-6">
-                        <ul>
-                          <li><p className="lead">Passion</p></li>
-                          <li><p className="lead">Teamwork</p></li>
-                          <li><p className="lead">Determination</p></li>
-                        </ul>
-                      </div>
+                    <h2>News</h2>
+                    <div className="p-2">
+                      <p>
+                        Due to a change in BCEHS (BC Emergency Health Services) protocol, our North Shore communities have experienced a decline in the number of times our First Responders are dispatched to emergency calls. Unfortunately for our communities, this means we are no longer being called to assist you in every case. We need your help to correct this situation.  
+                        If you have called 911 requesting an ambulance, and if NSFR (North Shuswap First Responders) does not arrive before the ambulance, we would like to know.
+                      </p>
+                      <p>
+                        Please contact Don Devine at <a href="tel:250-572-7735">250-572-7735</a> or email him at <a href = "mailto: donedevine@gmail.com">donedevine@gmail.com </a>
+                        and be assured any information shared with us will remain confidential!
+                        We want to be there for you! Thank you for helping us to keep our community safe.
+                      </p>
+                      <p>
+                        Together, 'We Make a Difference.'
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -139,8 +148,17 @@ class Home extends Component {
                 <h3>Member of the Month</h3>
                 <br/>
                 <img src='' className="memberMonth shadow" alt="memberOfMonth" id="mvpPicture"/>
-                <p className="lead" id="mvpName"></p>
-                <p className="text-left" id="mvpDescription"></p>
+                <p className="lead" id="mvpName">
+                  Don Devine
+                </p>
+                <p className="text-left" id="mvpDescription">
+                  Don has lived in the North Shuswap for four years, and has been a First Responder, dispatcher, and vice president of our Society for three years.
+                  Before coming to the Shuswap, Don was a paramedic in Vancouver and Vernon for 32 years, before officially retiring in 2004. He also worked for CUPE for 17 years, as a National Representative!
+                  Don started volunteering with the North Shuswap First Responders as a way to give back to the community for their welcoming and ongoing support.
+                </p>
+                <p>
+                  Contact Don at: <a href="tel:250-572-7735">250-572-7735</a> or <a href = "mailto: donedevine@gmail.com">donedevine@gmail.com </a>
+                </p>
               </div>
             </div>
             <div className="row pt-4 pb-4">
