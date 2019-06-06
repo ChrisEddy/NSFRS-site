@@ -50,7 +50,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <Link to="/" className="nav-item nav-link" onClick={() => this.changeActive('homeLink')}><span id="homeLink">Home</span></Link>
-              <Link to="/about" className="nav-item nav-link" onClick={() => this.changeActive('aboutLink')}><span id="aboutLink">About Us</span></Link>
+              {/* <Link to="/about" className="nav-item nav-link" onClick={() => this.changeActive('aboutLink')}><span id="aboutLink">About Us</span></Link> */}
               <Link to="/calendar" className="nav-item nav-link" onClick={() => this.changeActive('calendarLink')}><span id="calendarLink">Calendar</span></Link>
               <Link to="/gallery" className="nav-item nav-link" onClick={() => this.changeActive('galleryLink')}><span id="galleryLink">Gallery</span></Link>
               <Link to="/donations" className="nav-item nav-link" onClick={() => this.changeActive('donationsLink')}><span id="donationsLink">Donations</span></Link>
