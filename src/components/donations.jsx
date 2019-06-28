@@ -10,7 +10,7 @@ class Donations extends Component {
       <div className="Donations">
         <Navbar/>
         <div className="spacer">
-          <div className="row mt-4 ml-5">
+          <div className="row mt-4 ml-4">
             <div className="col-12 text-left">
               <h1>Donations</h1>
             </div>
@@ -32,7 +32,7 @@ class Donations extends Component {
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>
           </div>
-          <div className="row mt-3">
+          <div className="row mt-2">
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-5">
@@ -60,12 +60,16 @@ class Donations extends Component {
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>
           </div>
-          <div className="row mt-3">
+          <div className="row">
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-5">
               <h4>Are you looking to borrow or rent equipment?</h4>
               <p>If you are in need of medical equipment, please contact Don Devine, leave your information with him and we will do our best to provide you with what you need free of cost.</p>
+              <h5>Don Devine`s contact info:</h5>
+              <p>
+                <a href="tel:250-572-7735">250-572-7735</a> or <a href = "mailto: donedevine@gmail.com">donedevine@gmail.com </a>
+              </p>
             </div>
             <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
             </div>

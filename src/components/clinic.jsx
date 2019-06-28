@@ -9,15 +9,16 @@ class Clinic extends Component {
     return (
       <div className="Clinic">
         <Navbar/>
-        <div className="row mt-4 ml-5">
+        <div className="row mt-4">
             <div className="col-12 text-left">
-                <h1>Clinic</h1>
+                <h1 className="ml-4">Clinic</h1>
+                <br/>
             </div>
-            <div className="row spacer">
+            <div className="row spacer p-2">
                 <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
 
                 </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-2">
+                <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div className="text-center mb-5">
                         <i className="fas fa-clinic-medical fa-4x"></i>
                     </div>
@@ -40,7 +41,7 @@ class Clinic extends Component {
                     <br/>
                     <h3>Clinic Location:</h3>
                     <div className="text-center">
-                        <div style={{"width": "100%"}}><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%232%20%E2%80%93%203874%20Squilax%20Anglemont%20%20Rd+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe></div><br />
+                        <div style={{"width": "100%"}}><iframe title="map" width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%232%20%E2%80%93%203874%20Squilax%20Anglemont%20%20Rd+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"><a href="https://www.maps.ie/map-my-route/">Create a route on google maps</a></iframe></div><br />
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-0 col-xs-0">
